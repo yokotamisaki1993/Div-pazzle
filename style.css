@@ -6,33 +6,42 @@
   clear: both;
 }
 
+.clear {
+  clear: both;
+}
+
 .wrapper {
   width: 400px;
-  height: 450px;
 }
 
 .red-box {
   height: 100px;
   background: #ff0000;
+  position: relative;
+  clear: both;
 }
 
 .white-box {
-  float: left;
-  height: 60px;
-  width: 160px;
   background: #ffffff;
-  position: relative;
-  margin: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 10px;
 }
 
 .box {
-  float: left;
   width: 40px;
   height: 40px;
   background: #a9004b;
-  position: absolute;
-  margin:10px;
-  display: flex;
+  float: left;
+  margin-right:10px;
+}
+.box:first-child {
+  margin-left: 0px;
+}
+
+.box:last-child {
+  margin-right: 0px;
 }
 
 .green-box {
@@ -47,7 +56,6 @@
   width: 250px;
   background: #8c2727;
   float: left;
-  position: sticky;
   position: relative;
 }
 
@@ -56,9 +64,14 @@
   height: 40px;
   background: #ff863f;
   border: 5px solid #ffffff;
+  margin-bottom: 10px;
+}
+.rectangle:last-child {
+  margin-bottom: 0px;
+}
+.wrapper2 {
   top: 40px;
   left: 40px;
-  margin: 10px;
   position: absolute;
 }
 
